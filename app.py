@@ -45,7 +45,10 @@ def get_player_stats():
                  f"For basketball, include stats like 'Points Per Game', 'Rebounds Per Game', and "
                  f"'Assists Per Game'. For soccer, include stats like 'Goals', 'Assists', 'Shots', and "
                  f"'Shots on Target'. Please format the response as a simple, human-readable text. Do "
-                 f"not use any JSON formatting, or include other text / explanation."
+                 f"not use any JSON formatting, or include other text / explanation. For Soccer, only "
+                 f"provide results for players in top flight leagues from, England, Spain, Italy, Germany, "
+                 f"Portugal, France, Netherlands, USA, and Turkey. For Basketball, only provide results "
+                 f"for players in the NBA. Display names as shown on FOTMOB / ESPN profiles."
                 )
 
         response = client.models.generate_content(
